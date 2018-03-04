@@ -1,9 +1,16 @@
 <resources>
     <string name="app_name">proFinder</string>
+    <string name="label_telalogin">Login</string>
+    <string name="label_telacadastro">Cadastre-se</string>
     <string name="splash_descricao">Splash Screen Background</string>
     <string name="loginbackground">Background da Tela de Login</string>
+    <string name="telacadastrousuario">Background tela cadastro de usuário</string>
     <string name="username">Usuário</string>
     <string name="password">Senha</string>
     <string name="entrar">Entrar</string>
     <string name="cadastre_se"><u>Não tem uma conta? Faça uma agora mesmo!</u></string>
+    <string name="nome">Nome</string>
+    <string name="email">Email</string>
+    <string name="senha_novamente">Repita sua senha</string>
+
 </resources>

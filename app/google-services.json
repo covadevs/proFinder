@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "436931825520",
+    "firebase_url": "https://profinder-ee37d.firebaseio.com",
+    "project_id": "profinder-ee37d",
+    "storage_bucket": "profinder-ee37d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:436931825520:android:ec05f6e0486a550b",
+        "android_client_info": {
+          "package_name": "profinder.com.br.profinderproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "436931825520-hqsiprrb21faum57ec2f29thbm6k2l9a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "profinder.com.br.profinderproject",
+            "certificate_hash": "e0d7051276f567f1007440f7f122907aeb25da54"
+          }
+        },
+        {
+          "client_id": "436931825520-5hgnpe7ais9smrvrh24b6dnhvom6cnmc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAkWSJIO84bDHvDHdRPdZR_bq2XWL_Rvxw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "436931825520-5hgnpe7ais9smrvrh24b6dnhvom6cnmc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -18,12 +18,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LoginActivity" />
-        <activity android:name=".CadastroActivity"></activity>
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/label_telalogin" />
+        <activity
+            android:name=".CadastroActivity"
+            android:label="@string/label_telacadastro" />
 
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
+
+        <activity android:name=".TesteEntradaActivity"></activity>
     </application>
 
 </manifest>

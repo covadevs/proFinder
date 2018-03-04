@@ -1,9 +1,142 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="profinder.com.br.profinderproject.CadastroActivity">
 
-</android.support.constraint.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/telacadastrousuario"
+        android:scaleType="fitEnd"
+        app:srcCompat="@drawable/loginbackground" />
+
+    <TextView
+        android:id="@+id/cadastoappname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="77dp"
+        android:fontFamily="@font/roboto_thin"
+        android:text="@string/app_name"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="72sp" />
+
+    <EditText
+        android:id="@+id/nome"
+        android:layout_width="324dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cadastoappname"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:backgroundTint="@color/Peru"
+        android:ems="10"
+        android:fontFamily="@font/roboto_light"
+        android:hint="@string/nome"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="211dp" />
+
+    <EditText
+        android:id="@+id/usuario"
+        android:layout_width="324dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/nome"
+        android:layout_below="@+id/nome"
+        android:layout_marginTop="20dp"
+        android:layout_alignStart="@+id/nome"
+        android:backgroundTint="@color/Peru"
+        android:ems="10"
+        android:fontFamily="@font/roboto_light"
+        android:hint="@string/username"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="211dp" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/usuario"
+        android:layout_alignStart="@+id/usuario"
+        android:layout_below="@+id/usuario"
+        android:backgroundTint="@color/Peru"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/senha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/email"
+        android:layout_alignStart="@+id/email"
+        android:layout_below="@+id/email"
+        android:backgroundTint="@color/Peru"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/retypesenha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/senha"
+        android:layout_alignStart="@+id/senha"
+        android:backgroundTint="@color/Peru"
+        android:layout_below="@+id/senha"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/senha_novamente"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/cadastrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:background="@color/Peru"
+        android:text="Cadastrar" />
+
+    <RadioGroup
+        android:id="@+id/tipo_usuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_alignStart="@+id/retypesenha"
+        android:layout_alignEnd="@+id/retypesenha"
+        android:layout_below="@+id/retypesenha"
+        >
+
+        <RadioButton
+            android:id="@+id/professor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:buttonTint="@color/Peru"
+            android:text="Professor" />
+
+        <RadioButton
+            android:id="@+id/aluno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:buttonTint="@color/Peru"
+            android:text="Aluno" />
+    </RadioGroup>
+</RelativeLayout>
