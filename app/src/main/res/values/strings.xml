@@ -1,3 +1,8 @@
 <resources>
-    <string name="app_name">proFinderProject</string>
+    <string name="app_name">proFinder</string>
+    <string name="splash_descricao">Splash Screen Background</string>
+    <string name="loginbackground">Background da Tela de Login</string>
+    <string name="username">Usuário</string>
+    <string name="password">Senha</string>
+    <string name="entrar">Entrar</string>
 </resources>
