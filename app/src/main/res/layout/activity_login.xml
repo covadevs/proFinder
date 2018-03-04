@@ -55,7 +55,7 @@
         tools:layout_editor_absoluteY="274dp" />
 
     <Button
-        android:id="@+id/logar"
+        android:id="@+id/entrar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/password_login"
@@ -66,6 +66,16 @@
         android:textColor="@color/GhostWhite"
         tools:layout_editor_absoluteX="148dp"
         tools:layout_editor_absoluteY="360dp" />
+
+    <TextView
+        android:id="@+id/signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/entrar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:clickable="true"
+        android:text="@string/cadastre_se" />
 
 
 </RelativeLayout>
