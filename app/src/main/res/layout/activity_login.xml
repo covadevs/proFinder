@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/login_layout"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -12,8 +13,8 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:contentDescription="@string/loginbackground"
         android:scaleType="fitEnd"
+        android:contentDescription="@string/loginbackground"
         app:srcCompat="@drawable/loginbackground" />
 
     <TextView
@@ -22,7 +23,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="77dp"
+        android:layout_marginTop="55dp"
         android:fontFamily="@font/roboto_thin"
         android:text="@string/app_name"
         android:textAlignment="center"
@@ -36,7 +37,6 @@
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:backgroundTint="@color/Peru"
-        android:layout_marginEnd="28dp"
         android:ems="10"
         android:fontFamily="@font/roboto_light"
         android:hint="@string/username"
@@ -49,9 +49,10 @@
         android:layout_width="322dp"
         android:layout_height="wrap_content"
         android:layout_alignEnd="@+id/username_login"
+        android:layout_alignStart="@+id/username_login"
         android:layout_below="@+id/username_login"
-        android:backgroundTint="@color/Peru"
         android:layout_marginTop="17dp"
+        android:backgroundTint="@color/Peru"
         android:ems="10"
         android:fontFamily="@font/roboto_light"
         android:hint="@string/password"

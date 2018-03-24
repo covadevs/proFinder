@@ -12,5 +12,7 @@
     <string name="nome">Nome</string>
     <string name="email">Email</string>
     <string name="senha_novamente">Repita sua senha</string>
+    <string name="title_activity_professor">Professor</string>
+    <string name="title_activity_Aluno">Aluno</string>
 
 </resources>

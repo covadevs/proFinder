@@ -11,6 +11,8 @@ import android.widget.RadioGroup;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
+import java.util.LinkedList;
+
 public class CadastroActivity extends AppCompatActivity {
     private EditText mNome;
     private EditText mUsuario;
@@ -53,17 +55,17 @@ public class CadastroActivity extends AppCompatActivity {
                 FirebaseDatabase database = FirebaseDatabase.getInstance();
                 DatabaseReference myRef = database.getReference();
                 if (selectedText.equalsIgnoreCase("professor")) {
-                    Usuario u = new Professor(mNome.getText().toString(),
+                    Usuario u = new Usuario(mNome.getText().toString(),
                                             mUsuario.getText().toString(),
                                             mEmail.getText().toString(),
-                                            mSenha.getText().toString());
+                                            mSenha.getText().toString(), true);
                     myRef.child("usuario").child(mUsuario.getText().toString()).setValue(u);
                     finish();
                 } else if (selectedText.equalsIgnoreCase("aluno")) {
-                    Usuario u = new Aluno(mNome.getText().toString(),
+                    Usuario u = new Usuario(mNome.getText().toString(),
                             mUsuario.getText().toString(),
                             mEmail.getText().toString(),
-                            mSenha.getText().toString());
+                            mSenha.getText().toString(), false);
                     myRef.child("usuario").child(mUsuario.getText().toString()).setValue(u);
                     finish();
                 }

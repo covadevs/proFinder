@@ -1,25 +1,32 @@
 package profinder.com.br.profinderproject;
 
+import java.io.Serializable;
+import java.util.LinkedList;
+import java.util.List;
+
 /**
  * Created by Leonardo on 04/03/2018.
  */
 
-public abstract class Usuario {
+public class Usuario implements Serializable {
     private String nome;
     private String usuario;
     private String email;
     private String senha;
+    private boolean isProfessor;
+
 
     public Usuario() {
 
     }
 
     public Usuario(String nome, String usuario, String email,
-                    String senha) {
+                    String senha, boolean isProfessor) {
         this.nome = nome;
         this.usuario = usuario;
         this.email = email;
         this.senha = senha;
+        this.isProfessor = isProfessor;
     }
 
     public String getNome() {
@@ -54,6 +61,14 @@ public abstract class Usuario {
         this.senha = senha;
     }
 
+    public boolean isProfessor() {
+        return isProfessor;
+    }
+
+    public void setProfessor(boolean professor) {
+        isProfessor = professor;
+    }
+
     @Override
     public String toString() {
         return "Usuario{" +
@@ -61,6 +76,7 @@ public abstract class Usuario {
                 ", usuario='" + usuario + '\'' +
                 ", email='" + email + '\'' +
                 ", senha='" + senha + '\'' +
+                ", isProfessor=" + isProfessor +
                 '}';
     }
 }
