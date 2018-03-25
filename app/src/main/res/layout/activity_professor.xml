@@ -5,13 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="profinder.com.br.profinderproject.ProfessorActivity">
-
-    <ListView
-        android:id="@+id/lista_projetos_professor"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior"
-        tools:layout_editor_absoluteY="80dp" />
+        <ListView
+            android:id="@+id/lista_projetos_professor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
 
     <android.support.design.widget.AppBarLayout
         android:id="@+id/app_bar"

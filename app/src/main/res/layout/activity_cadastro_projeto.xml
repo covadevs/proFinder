@@ -6,6 +6,14 @@
     android:layout_height="match_parent"
     tools:context="profinder.com.br.profinderproject.CadastroProjetoActivity">
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:scaleType="fitEnd"
+        app:srcCompat="@drawable/loginbackground" />
+
     <TextView
         android:id="@+id/cadastrar_projeto"
         android:layout_width="match_parent"
@@ -17,7 +25,7 @@
         android:text="Cadastrar Projeto"
         android:textAlignment="center"
         android:textColor="@color/Black"
-        android:textSize="72sp" />
+        android:textSize="40sp" />
 
     <EditText
         android:id="@+id/nome_projeto"
@@ -40,11 +48,10 @@
         android:id="@+id/nome_coordenador"
         android:layout_width="324dp"
         android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/nome_projeto"
+        android:layout_alignStart="@+id/nome_projeto"
         android:layout_below="@+id/nome_projeto"
-        android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
         android:backgroundTint="@color/Peru"
         android:ems="10"
         android:fontFamily="@font/roboto_light"
@@ -55,25 +62,26 @@
 
     <SeekBar
         android:id="@+id/qnt_vagas"
-        android:layout_width="324dp"
+        android:layout_width="240dp"
         android:layout_height="wrap_content"
+        android:layout_alignParentEnd="@+id/valor_seekbar"
+        android:layout_alignStart="@+id/nome_coordenador"
         android:layout_below="@+id/nome_coordenador"
-        android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
+        android:background="@color/Peru"
         android:max="50"
+        android:progress="1"
         android:min="1" />
 
     <EditText
         android:id="@+id/descricao_projeto"
         android:layout_width="324dp"
         android:layout_height="wrap_content"
+        android:maxLines="2"
+        android:layout_alignStart="@+id/qnt_vagas"
+        android:layout_alignEnd="@+id/valor_seekbar"
         android:layout_below="@+id/qnt_vagas"
-        android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
         android:backgroundTint="@color/Peru"
         android:ems="10"
         android:fontFamily="@font/roboto_light"
@@ -86,11 +94,11 @@
         android:id="@+id/curso_projeto"
         android:layout_width="324dp"
         android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/descricao_projeto"
+        android:layout_alignEnd="@+id/descricao_projeto"
         android:layout_below="@+id/descricao_projeto"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
         android:backgroundTint="@color/Peru"
         android:ems="10"
         android:fontFamily="@font/roboto_light"
@@ -108,6 +116,15 @@
         android:layout_marginTop="20dp"
         android:layout_marginBottom="20dp"
         android:background="@color/Peru"
+        android:textColor="@color/White"
         android:text="Cadastrar" />
+
+    <TextView
+        android:id="@+id/valor_seekbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/nome_coordenador"
+        android:layout_alignTop="@+id/qnt_vagas"
+        android:text="50/50 vagas" />
 
 </RelativeLayout>

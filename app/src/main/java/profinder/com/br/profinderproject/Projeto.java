@@ -1,10 +1,12 @@
 package profinder.com.br.profinderproject;
 
+import java.io.Serializable;
+
 /**
  * Created by Leonardo on 24/03/2018.
  */
 
-public class Projeto {
+public class Projeto implements Serializable {
     private String nome;
     private String coordenador;
     private Integer qntVagas;

@@ -1,6 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
 
-</android.support.constraint.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/circle" />
+    
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/nome_projeto_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nome do Projeto"
+            android:textColor="@color/Black"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/coordenador_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nome do Coordenador" />
+
+        <TextView
+            android:id="@+id/vagas_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quantidade de Vagas" />
+
+        <TextView
+            android:id="@+id/curso_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nome do Curso" />
+
+    </LinearLayout>
+
+</LinearLayout>
