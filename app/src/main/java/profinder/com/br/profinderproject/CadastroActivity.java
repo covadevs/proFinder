@@ -75,7 +75,6 @@ public class CadastroActivity extends AppCompatActivity {
 
                 if(!vazio && senhaConfere && !usuarioExiste) {
                     mUsuario.removeTextChangedListener(textWatcher);
-                    mNome.removeTextChangedListener(textWatcher);
                     int radioButtonID = mTipoUsuaario.getCheckedRadioButtonId();
                     View radioButtom = mTipoUsuaario.findViewById(radioButtonID);
                     int idx = mTipoUsuaario.indexOfChild(radioButtom);
@@ -87,7 +86,7 @@ public class CadastroActivity extends AppCompatActivity {
                                 mUsuario.getText().toString(),
                                 mEmail.getText().toString(),
                                 mSenha.getText().toString(), true);
-                        myRef.child("usuario").child(mNome.getText().toString()).setValue(u).addOnSuccessListener(new OnSuccessListener<Void>() {
+                        myRef.child("usuario").child(mUsuario.getText().toString()).setValue(u).addOnSuccessListener(new OnSuccessListener<Void>() {
                             @Override
                             public void onSuccess(Void aVoid) {
                                 toastSucesso.show();
@@ -99,7 +98,7 @@ public class CadastroActivity extends AppCompatActivity {
                                 mUsuario.getText().toString(),
                                 mEmail.getText().toString(),
                                 mSenha.getText().toString(), false);
-                        myRef.child("usuario").child(mNome.getText().toString()).setValue(u).addOnSuccessListener(new OnSuccessListener<Void>() {
+                        myRef.child("usuario").child(mUsuario.getText().toString()).setValue(u).addOnSuccessListener(new OnSuccessListener<Void>() {
                             @Override
                             public void onSuccess(Void aVoid) {
                                 toastSucesso.show();
@@ -195,7 +194,6 @@ public class CadastroActivity extends AppCompatActivity {
             }
         };
         this.mUsuario.addTextChangedListener(textWatcher);
-        this.mNome.addTextChangedListener(textWatcher);
     }
 
     public void verificarSeUsuarioExiste(String usuario) {
@@ -206,8 +204,6 @@ public class CadastroActivity extends AppCompatActivity {
                     usuarioExiste = true;
                     if(mUsuario.isFocused()) {
                         mUsuario.setError("Usuário inválido");
-                    } else if (mNome.isFocused()) {
-                        mNome.setError("Nome inválido");
                     }
                 } else {
                     usuarioExiste = false;

@@ -69,6 +69,8 @@ public class Usuario implements Serializable {
         isProfessor = professor;
     }
 
+
+
     @Override
     public String toString() {
         return "Usuario{" +
