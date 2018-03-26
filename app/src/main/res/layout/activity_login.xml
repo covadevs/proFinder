@@ -38,7 +38,7 @@
         android:layout_centerVertical="true"
         android:backgroundTint="@color/Peru"
         android:ems="10"
-        android:fontFamily="@font/roboto_light"
+        android:fontFamily="@font/roboto_thin"
         android:hint="@string/username"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
@@ -54,7 +54,7 @@
         android:layout_marginTop="17dp"
         android:backgroundTint="@color/Peru"
         android:ems="10"
-        android:fontFamily="@font/roboto_light"
+        android:fontFamily="@font/roboto_thin"
         android:hint="@string/password"
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
@@ -69,7 +69,6 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="15dp"
         android:background="@color/Peru"
-        android:fontFamily="@font/roboto_light"
         android:text="@string/entrar"
         android:textColor="@color/GhostWhite"
         tools:layout_editor_absoluteX="148dp"
@@ -83,8 +82,10 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="32dp"
         android:clickable="true"
-        android:fontFamily="@font/roboto_light"
+        android:focusable="true"
+        android:fontFamily="@font/roboto_thin"
         android:text="@string/cadastre_se"
+        android:textAlignment="center"
         android:textColor="@color/black" />
 
 

@@ -28,7 +28,7 @@
         <activity
             android:name=".ProfessorActivity"
             android:label="@string/title_activity_professor"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme" />
         <activity
             android:name=".CadastroProjetoActivity"
             android:label="Projeto" />

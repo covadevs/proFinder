@@ -1,9 +1,116 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:id="@+id/editar_layout"
     tools:context="profinder.com.br.profinderproject.EditarProjetoActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="55dp"
+            android:fontFamily="@font/roboto_thin"
+            android:gravity="center"
+            android:text="Editar Projeto"
+            android:textColor="@color/Black"
+            android:textSize="40sp" />
+
+        <EditText
+            android:id="@+id/et_nomeprojeto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/Peru"
+            android:ems="10"
+            android:hint="Nome do Projeto"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/et_coordenador"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/Peru"
+            android:ems="10"
+            android:hint="Coordenador"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/et_descricao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/Peru"
+            android:maxLines="3"
+            android:ems="10"
+            android:hint="Descrição"
+            android:inputType="textMultiLine" />
+
+        <EditText
+            android:id="@+id/et_curso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/Peru"
+            android:ems="10"
+            android:hint="Curso"
+            android:inputType="textPersonName" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <SeekBar
+                android:id="@+id/sb_qntvagas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:max="50"
+                android:min="1"
+                android:progress="1"
+                android:layout_weight="1"
+                android:background="@color/Peru" />
+
+            <TextView
+                android:id="@+id/tw_vagas_editarprojeto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:text="50/50 Vagas" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/bt_editar_projeto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                android:background="@color/Peru"
+                android:textColor="@color/White"
+                android:text="Editar" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
